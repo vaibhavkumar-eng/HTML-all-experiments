@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile Cards</title>
+    <style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 40px 20px;
+    
+    border: 1px solid #ccc;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; 
+    padding: 30px;
+    margin: 0 15px; 
+    text-align: center;
+    width: 200px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.profile-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+        border-radius: 50%; 
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+.details p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #777;
+}
+
+
+.details .course {
+    color: #333; 
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="profile-circle">JK</div>
+            <div class="name">Jeet Kumar</div>
+            <div class="details">
+                <p class="course">B.Tech - CSE</p>
+                <p>Roll No: 21CS1007</p>
+                <p>1st Year</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="profile-circle">AR</div>
+            <div class="name">Asha Rani</div>
+            <div class="details">
+                <p class="course">B.Tech - IT</p>
+                <p>Roll No: 21IT1012</p>
+                <p>1st Year</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="profile-circle">RK</div>
+            <div class="name">Rohit Kumar</div>
+            <div class="details">
+                <p class="course">B.Tech - ECE</p>
+                <p>Roll No: 21EC1009</p>
+                <p>1st Year</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
