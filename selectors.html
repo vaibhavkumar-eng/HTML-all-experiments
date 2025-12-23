@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /*class selector */
+        .frst{
+            color: aqua;
+            background-color: beige;
+        }
+        /* id selector */
+        #secnd{
+            color: blue;
+            background-color: aliceblue;
+        }
+        /* Element selector */
+        h3{
+            color: aqua;
+        }
+        /* CHILD SELECTOR*/
+        div > p{
+            color: blueviolet;
+            background-color: aliceblue;
+        }
+        /* Descendant operator */
+        div p{
+            color: chocolate;
+            background-color: black;
+        }
+        /*Universal operator */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* psuedo selectors */
+        a:visited{
+            color:aqua;
+        }
+        p:first-child{
+            color: aliceblue;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        a:active{
+            background-color: green ;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    <div class="frst">
+        I am the first div
+        <article>
+     <p>I am a paraagraph insisde a div</p>
+     </article>
+    </div>
+    <div id="secnd">
+        I am the second div
+    </div>
+    <h3>I am the element selector</h3>
+    <a href="https://www.google.com">Go to google</a>
+    <div class="one">
+       <p> I am one </p>
+       <p>I am second</p>
+    </div>
+
+    
+</body>
+</html>
